@@ -1,0 +1,105 @@
+$amarillo: #F1E58A
+$purpura: #4C5374
+$violeta: #71647C
+$azul: #D0F0F7
+
+*
+    margin: 10px
+    padding: 10px
+    box-sizing: border-box
+body
+    background: $azul
+
+.padre
+    display: flex
+    flex-flow: column nowrap
+
+.cabecera
+    background: $purpura
+    flex-flow: column nowrap
+
+.menu
+    background: $violeta
+    display: flex
+    flex-flow: row nowrap
+    height: 100px
+    align-items: center
+
+.logo
+    background: $amarillo
+    flex: 1 1 auto
+    height: 30px
+
+.nav
+    background: $amarillo
+    flex: 5 1 auto
+    height: 30px
+
+.social
+    background: $amarillo
+    flex: 1 1 auto
+    height: 30px
+
+.texto-principal
+    background: $violeta
+    h1
+        background: $amarillo
+
+.seccion
+    background: $purpura
+    display: flex
+
+.articulos
+    background: $violeta
+    display: flex
+    flex: 3 1 auto
+    flex-flow: row wrap
+
+.articulo
+    background: $amarillo
+    flex: 1 1 40%
+
+.navegacion
+    background: $amarillo
+    flex: 1 1 100%
+
+.barra
+    background: $violeta
+    flex: 1 1 auto
+
+.publicidad
+    background: $amarillo
+
+.pie
+    background: $purpura
+    display: flex
+    justify-content: center
+
+.nav-pie
+    background: $amarillo
+    width: 300px
+
+@media all and (max-width: 800px)
+    .menu
+        flex-direction: column
+        height: auto
+
+    .menu *
+        width: 90%
+
+    .barra
+        display: flex
+
+    .publicidad
+        flex: 1 1 auto
+
+    .seccion
+        flex-direction: column
+
+@media all and (max-width: 600px)
+    .articulos
+        flex-direction: column
+
+@media all and (max-width: 400px)
+    .barra
+        flex-direction: column
